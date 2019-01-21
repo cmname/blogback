@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页_倪槑个人博客</title>
+<meta name="keywords" content="个人博客,杨青个人博客,个人博客模板,杨青" />
+<meta name="description" content="杨青个人博客，是一个站在web前端设计之路的女程序员个人网站，提供个人博客模板免费资源下载的个人原创网站。" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/static/web/css/base.css" rel="stylesheet">
+<link href="/static/web/css/index.css" rel="stylesheet">
+<link href="/static/web/css/m.css" rel="stylesheet">
+<link rel="shortcut icon" href="/static/backweb/images/icon/logoo.jpg">
+<script src="/static/web/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/static/web/js/hc-sticky.js"></script>
+<script type="text/javascript" src="/static/web/js/comm.js"></script>
+<!--[if lt IE 9]>
+<script src="/static/web/js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+<header class="header-navigation" id="header">
+  <nav><div class="logo"><a href="/">倪槑个人博客</a></div>
+    <h2 id="mnavh"><span class="navicon"></span></h2>
+    <ul id="starlist">
+      <li><a href="/web/index/">网站首页</a></li>
+      <li><a href="/web/share/">我的相册</a></li>
+      <li><a href="/web/list/">我的日记</a></li>
+      <li><a href="/web/about/">关于联盟</a></li>
+      <!--<li><a href="gbook.html">留言</a></li>-->
+      <!--<li><a href="info.html">内容页</a></li>-->
+      <!--<li><a href="infopic.html">内容页</a></li>-->
+    </ul>
+</nav>
+</header>
+<article>
+  <aside class="l_box">
+    <div class="about_me">
+      <h2>简介</h2>
+      <ul>
+        <i><img src="/static/web/images/4.jpg"></i>
+        <p><b>英雄联盟</b>《英雄联盟》致力于推动全球电子竞技的发展，除了联动各赛区发展职业联赛、打造电竞体系之外，每年还会举办“季中冠军赛”“全球总决赛”“All Star全明星赛”三大世界级赛事，获得了亿万玩家的喜爱，形成了自己独有的电子竞技文化。</p>
+      </ul>
+    </div>
+    <div class="wdxc">
+      <h2>我的相册</h2>
+      <ul>
+        <li><a href="/"><img src="/static/web/images/7.jpg"></a></li>
+        <li><a href="/"><img src="/static/web/images/8.jpg"></a></li>
+        <li><a href="/"><img src="/static/web/images/9.jpg"></a></li>
+        <li><a href="/"><img src="/static/web/images/10.jpg"></a></li>
+        <li><a href="/"><img src="/static/web/images/11.jpg"></a></li>
+        <li><a href="/"><img src="/static/web/images/12.jpg"></a></li>
+      </ul>
+    </div>
+    <div class="search">
+      <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+        <input name="keyboard" id="keyboard" class="input_text" value="请输入关键字词" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字词'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='请输入关键字词'}" type="text">
+        <input name="show" value="title" type="hidden">
+        <input name="tempid" value="1" type="hidden">
+        <input name="tbname" value="news" type="hidden">
+        <input name="Submit" class="input_submit" value="搜索" type="submit">
+      </form>
+    </div>
+    <div class="tuijian">
+      <h2>点击排行</h2>
+      <ul>
+        {% for i in article %}
+        <li><a href="/">{{ i.title }}</a></li>
+        <!--<li><a href="/">帝国cms 列表页调用子栏目，没有则不显示栏目名称</a></li>-->
+        <!--<li><a href="/">第二届 优秀个人博客模板比赛参选活动</a></li>-->
+        <!--<li><a href="/">个人博客模板《绅士》后台管理</a></li>-->
+        <!--<li><a href="/">你是什么人便会遇上什么人</a></li>-->
+        <!--<li><a href="/">帝国cms 列表页调用子栏目，没有则不显示栏目名称</a></li>-->
+        <!--<li><a href="/">第二届 优秀个人博客模板比赛参选活动</a></li>-->
+        <!--<li><a href="/">个人博客模板《绅士》后台管理</a></li>-->
+        {% endfor %}
+      </ul>
+    </div>
+    <!--<div class="fenlei">-->
+      <!--<h2>文章分类</h2>-->
+      <!--<ul>-->
+        <!--<li><a href="/">学无止境（33）</a></li>-->
+        <!--<li><a href="/">日记（19）</a></li>-->
+        <!--<li><a href="/">慢生活（520）</a></li>-->
+        <!--<li><a href="/">美文欣赏（40）</a></li>-->
+      <!--</ul>-->
+    <!--</div>-->
+    <!--<div class="guanzhu">-->
+      <!--<h2>关注我 么么哒</h2>-->
+      <!--<ul>-->
+        <!--<img src="/static/web/images/wx.jpg">-->
+      <!--</ul>-->
+    <!--</div>-->
+  </aside>
+  <main class="r_box">
+     <div class="about">
+      <p>《英雄联盟》(简称LOL)是由美国拳头游戏(Riot Games)开发、中国大陆地区腾讯游戏代理运营的英雄对战MOBA竞技网游。
+游戏里拥有数百个个性英雄，并拥有排位系统、符文系统等特色养成系统。<br />
+           <br />
+            《英雄联盟》还致力于推动全球电子竞技的发展，除了联动各赛区发展职业联赛、打造电竞体系之外，每年还会举办“季中冠军赛”“全球总决赛”“All Star全明星赛”三大世界级赛事，获得了亿万玩家的喜爱，形成了自己独有的电子竞技文化。<br />
+            <br />
+    <img src="/static/web/images/1.jpg">  关于暗影岛的一切似乎都是谜，只有极少数人才能从暗影岛或者回来，或许那里根本就不会有人类敢随意涉足，正义之地的著名竞技场—扭曲丛林，就位于岛的深处。暗影岛的英雄几乎都出于某种不可告人的目的加入联盟，种种迹象表明，暗影岛的内部并不团结，而这种现象似乎在预示了某些大事件的发生。<br />
+            <br />
+            阿兹尔的傲慢终于导致灾难发生，当太阳圆盘碟将破晓阳光转化成一道能量时，泽拉斯背叛了君主，将他推开并将那道能量据为已有。在一瞬间，阿兹尔变得濒死，而泽拉斯变成一股纯粹又邪恶的能量体，而整个恕瑞玛同时也被沙漠所吞噬。<br />
+            <br />
+            许多传奇故事都与巨神峰有关，比较常见的是关于被灌注了神力的武士浑身火光四射从天而降斩妖除魔，更加离奇的则是关于神祇和他们的星界居所坠入凡间化作神峰。有些传奇故事甚至神乎其神地称这座山其实是一位沉睡中的上古巨人。和其他神秘地区一样，巨神峰也是一座吸引着梦想家、疯人和冒险者的璀璨信标。</p>
+          <br />
+           <br />
+            祖安自豪地宣称，这里拥有全瓦罗兰种类最多的化学研究中心。大量城邦——甚至包括竞争对手皮尔特沃夫——都与祖安有化学贸易往来。此外，祖安还是瓦罗兰的炼金术中心，只有寥寥几位炼金术士居住在祖安之外。瓦罗然的居民应当小心化学工业，这可比炼金术更加不可靠，影响也更加无法预测。然而在祖安，这些都是不可知的。<br />
+            <br />
+    <img src="/static/web/images/1.jpg">  比尔吉沃特是蓝焰岛上的扩展建筑，一直到八十年前才发现的。它位于三个岛三个岛最大的一座，拥有一个宽广且易守难攻的天然港口，面向东部海岸。三岛链中最大的岛屿仍是最稳固的。比尔吉沃特可以扩展开来成为一个真正的城邦。城镇无法成为一个政治实体，因为这里是瓦罗兰那些早已建立的王国的庇护所<br />
+            <br />
+            皮尔特沃夫是瓦罗兰北部的和平城邦，致力于推动科学技术的发展。当然在皮尔特沃夫境内也存在有魔法，不过科技得到了更广泛的使用，并成为居民的首选。“魔法是科技引擎的燃料”这是皮尔特沃夫的大众常识。海克斯科技即为皮尔特沃夫的法律准则。<br />
+            <br />
+            这是一个无情的地方，山地长年被冰雪所覆盖。弗雷尔卓德位于瓦罗兰大陆北部冻苔原地带，来这里旅游，特别是在冬季，是非常危险的。在这里有一个世上最大的冰雪漩涡，包围着整个大陆的北方。弗雷尔卓德人经历了多年的战争。在这一代，由传奇三姐妹分别带领着各自的部落而战，分别是——阿瓦罗萨部落的艾希公主、寒冬之爪部落的瑟庄妮公主，以及玛芙乐公主统一苦行僧部落。</p>
+          <br />
+          <!--<h2>About my blog</h2>-->
+          <!--&nbsp;-->
+          <!--<p>域 名：www.yangqq.com 创建于2011年01月12日&nbsp;</p>-->
+          <!--<br />-->
+          <!--<p>服务器：阿里云服务器&nbsp;&nbsp;<a href="https://promotion.aliyun.com/ntms/act/ambassador/sharetouser.html?userCode=8smrzoqa&amp;productCode=vm" target="_blank"><span style="color:#FF0000;"><strong>前往阿里云官网购买&gt;&gt;</strong></span></a></p>-->
+          <!--<br />-->
+          <!--<p>备案号：蜀ICP备11002373号-1</p>-->
+          <!--<br />-->
+          <!--<p>程 序：PHP 帝国CMS7.5</p>-->
+  <!---->
+     </div>
+  </main>
+</article>
+<footer>
+  <p>Design by <a href="http://www.yangqq.com" target="_blank">倪槑个人博客</a> <a href="/">蜀ICP备11002373号-1</a></p>
+</footer>
+<a href="#" class="cd-top">Top</a>
+</body>
+</html>
